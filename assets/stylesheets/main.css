@@ -1,0 +1,13 @@
+/* Main Styles */
+.navbar-wrapper {
+  background: url(../images/carousel/nav-bg.png) bottom left repeat-x;
+  margin-top: 0;
+}
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: transparent;
+}
