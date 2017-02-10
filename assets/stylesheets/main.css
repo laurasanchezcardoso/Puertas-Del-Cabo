@@ -14,3 +14,69 @@
 .navbar-inverse .navbar-nav>li>a {
 	color: white;
 }
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.carac1 {
+	width: 30%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.carac2 {
+  width: 30%;
+  margin-right: 10px;
+}
+.carac3 {
+  width: 30%;
+}
+.carTitle {
+  text-align: left;
+  color: #636363;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: #E4E4E4;
+  font-weight: normal;
+  padding: 5px 10px;
+}
+ul.carList {
+  font-size: 14px;
+  list-style: none;
+  text-align: left;
+  padding-left: 9px;
+}
+ul.carList li {
+  border-bottom: 1px dotted #979797;
+  padding: 5px 0;
+}
+ul.carList li p{
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+.carCheck {
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  background-image: url(assets/images/icons/car_check.png);
+  float: right;
+}
+.carOk {
+  background-position: 0 0;
+}
+.carNo {
+  background-position: -16px 0;
+}
+.carNum {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+
