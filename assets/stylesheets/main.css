@@ -56,14 +56,14 @@ a.mapFilterOff {
 	border: 1px solid #dbdbdb;
 }
 span.mapRefIcon {
-	background-image: url(../img/icons/mapRef.png);
+	background-image: url(assets/images/icons/mapRefOff.png);
 	display: inline-block;
 	width: 13px;
 	height: 16px;
 	margin-bottom: -3px;
 }
 span.mapRefIconOff {
-	background-image: url(../img/icons/mapRefOff.png);
+	background-image: url(assets/images/icons/mapRefOff.png);
 	display: inline-block;
 	width: 13px;
 	height: 16px;
