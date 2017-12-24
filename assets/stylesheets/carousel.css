@@ -133,3 +133,10 @@ body {
     margin-top: 120px;
   }
 }
+@media (max-width: 885px){
+    #myCarousel{
+      width: 885px;
+      height: auto;
+    }
+
+}
