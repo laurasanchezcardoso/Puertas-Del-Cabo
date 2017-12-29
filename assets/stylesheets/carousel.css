@@ -133,10 +133,17 @@ body {
     margin-top: 120px;
   }
 }
-@media (max-width: 885px){
+@media (max-width: 720px){
     #myCarousel{
-      width: 885px;
-      height: auto;
+      width: auto;
+
     }
+    .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: inherit;
+}
 
 }

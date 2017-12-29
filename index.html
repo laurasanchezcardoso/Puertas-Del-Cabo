@@ -129,13 +129,13 @@
     <div class="container marketing">
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <img class="img-circle" src="assets/images/big_07-DSC00112.jpg" alt="Generic placeholder image" width="140" height="140">
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <img class="img-circle" src="assets/images/big_08-DSC00113.jpg" alt="Generic placeholder image" width="140" height="140">
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <img class="img-circle" src="assets/images/big_08-IMG_1944.jpg" alt="Generic placeholder image" width="140" height="140">
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -146,10 +146,10 @@
       <hr class="featurette-divider">
 
       <div class="row featurette" id="about">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <h2 class="featurette-heading">Estamos acá,  <span class="text-muted">A 100 metros de la playa norte!!!</span></h2>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d726.5438520835977!2d-53.78218237546311!3d-34.40259376942027!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suy!4v1514080073288" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         <!-- -->
@@ -247,34 +247,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      function carouselNormalization() {
-var items = $('#carousel-example-generic .item'), //grab all slides
-    heights = [], //create empty array to store height values
-    tallest; //create variable to make note of the tallest slide
-
-if (items.length) {
-    function normalizeHeights() {
-        items.each(function() { //add heights to array
-            heights.push($(this).height());
-        });
-        tallest = Math.max.apply(null, heights); //cache largest value
-        items.each(function() {
-            $(this).css('min-height',tallest + 'px');
-        });
-    };
-    normalizeHeights();
-
-    $(window).on('resize orientationchange', function () {
-        tallest = 0, heights.length = 0; //reset vars
-        items.each(function() {
-            $(this).css('min-height','0'); //reset min-height
-        });
-        normalizeHeights(); //run it again
-    });
-}
-}
-carouselNormalization();
-    </script>
   </body>
 </html>
