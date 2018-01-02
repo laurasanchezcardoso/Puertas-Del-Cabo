@@ -247,5 +247,41 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function carouselNormalization() {
+  var items   = $('#carousel-id .item'),              // grab all the slides
+      heights = [],                                   // array to store heights
+      tallest;                                        // tallest slide
+
+  if (items.length) {
+    function normalizeHeights() {
+      items.each(function() {
+        heights.push($(this).height());               // add each slide's height
+      });                                             // to the array
+
+      tallest = Math.max.apply(null, heights);        // find the largest height
+
+      items.each(function() {
+        $(this).css('min-height', tallest + 'px');    // set each slide's minimum
+      });                                             // height to the largest
+    };
+
+    normalizeHeights();
+
+    $(window).on('resize orientationchange', function() {
+      tallest = 0, heights.length = 0;               // reset the variables
+
+      items.each(function() {
+        $(this).css('min-height', '0');              // reset each slide's height
+      });
+
+      normalizeHeights();                            // run it again
+    });
+  }
+}
+window.onload = function() {
+  carouselNormalization();
+}
+    </script>
   </body>
 </html>
