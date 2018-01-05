@@ -133,17 +133,19 @@ body {
     margin-top: 120px;
   }
 }
-@media (max-width: 720px){
+
+
+@media (max-width: 1024px){
     #myCarousel{
       width: auto;
 
     }
     .carousel {
-  height: 40vh;
+  height: 55vh;
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 40vh;
+  height: 55vh;
 }
     .carousel-inner > .item > img {
   position: absolute;
@@ -151,5 +153,53 @@ body {
   left: 0;
   width: auto;
 }
+}
+@media(max-width: 900px){
+.carousel {
+  height: 46vh;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 46vh;
+}
+    .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+}
+}
+@media (max-width: 720px){
+    #myCarousel{
+      width: auto;
 
+    }
+    .carousel {
+  height: 45vh;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 45vh;
+}
+    .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+}
+}
+@media (max-width: 480px){
+.carousel {
+  height: 34vh;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 34vh;
+}
+    .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+}
 }
