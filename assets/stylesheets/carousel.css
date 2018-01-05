@@ -175,11 +175,11 @@ body {
 
     }
     .carousel {
-  height: 45vh;
+  height: 42vh;
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 45vh;
+  height: 42vh;
 }
     .carousel-inner > .item > img {
   position: absolute;
