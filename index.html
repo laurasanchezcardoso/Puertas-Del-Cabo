@@ -22,7 +22,6 @@
   <body>
     <div class="navbar-wrapper">
       <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -43,10 +42,8 @@
             </div>
           </div>
         </nav>
-
       </div>
     </div>
-
 
     <!-- Carousel
     ================================================== -->
@@ -125,7 +122,6 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
     <div class="container marketing">
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -140,27 +136,24 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
 
       <div class="row featurette" id="about">
-        <div class="col-md-6">
+        <div class="col-md-6 texto">
           <h2 class="featurette-heading">Estamos acá,  <span class="text-muted">A 100 metros de la playa norte!!!</span></h2>
         </div>
         <div class="col-md-6">
-<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d726.5438520835977!2d-53.78218237546311!3d-34.40259376942027!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suy!4v1514080073288" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-        <!-- -->
-    </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d726.5438520835977!2d-53.78218237546311!3d-34.40259376942027!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suy!4v1514080073288" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
         </div>
-
+      </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette" id="services">
-        <div class="col-md-6 col-md-push-6">
+        <div class="col-md-6 col-md-push-6 texto">
           <h2 class="featurette-heading">Estamos en el cabo <span class="text-muted"></span></h2>
           <p class="lead">Entre el mar y las dunas. </p>
         </div>
@@ -174,7 +167,6 @@
                 <li>Camas dobles <span class="carNum">2</span></li>
                 <li>Camas simples <span class="carNum">16</span></li>
                 <li>Baños <span class="carNum">4</span></li>
-
             </ul>
           </div>
           <div class="left carac2">
@@ -218,7 +210,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette" id="contact">
-        <div class="col-md-6">
+        <div class="col-md-6 texto">
           <h2 class="featurette-heading">Como contactarnos</h2>
           <p class="lead">Llamando a nuestro teléfono de contacto : <strong>+598 99 056 300</strong></p>
           <p class="lead">Escribiendonos a  : <strong><a href="mailto:">natachavalujambio@hotmail.com</a></strong></p>
@@ -229,59 +221,23 @@
       </div>
 
       <hr class="featurette-divider">
-</div>
+    </div>
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 <a href="https://laurasanchezcardoso.github.io/">Laura Sánchez</a>. &middot; </p>
-      </footer>
+    <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2017 <a href="https://laurasanchezcardoso.github.io/">Laura Sánchez</a>. &middot; </p>
+    </footer>
 
     </div><!-- /.container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      function carouselNormalization() {
-  var items   = $('#carousel-id .item'),              // grab all the slides
-      heights = [],                                   // array to store heights
-      tallest;                                        // tallest slide
-
-  if (items.length) {
-    function normalizeHeights() {
-      items.each(function() {
-        heights.push($(this).height());               // add each slide's height
-      });                                             // to the array
-
-      tallest = Math.max.apply(null, heights);        // find the largest height
-
-      items.each(function() {
-        $(this).css('min-height', tallest + 'px');    // set each slide's minimum
-      });                                             // height to the largest
-    };
-
-    normalizeHeights();
-
-    $(window).on('resize orientationchange', function() {
-      tallest = 0, heights.length = 0;               // reset the variables
-
-      items.each(function() {
-        $(this).css('min-height', '0');              // reset each slide's height
-      });
-
-      normalizeHeights();                            // run it again
-    });
-  }
-}
-window.onload = function() {
-  carouselNormalization();
-}
-    </script>
+    <script src="assets/js/normalize.js""></script>
   </body>
 </html>

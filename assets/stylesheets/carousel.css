@@ -6,7 +6,14 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
-
+footer{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/*agrego un poco de padding para dar aire al texto*/
+.texto{
+  padding: 2em;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
