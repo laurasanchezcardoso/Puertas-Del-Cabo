@@ -14,6 +14,10 @@ footer{
 .texto{
   padding: 2em;
 }
+.animated{
+
+  opacity: 0;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
