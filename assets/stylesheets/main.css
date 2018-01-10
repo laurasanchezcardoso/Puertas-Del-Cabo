@@ -79,4 +79,11 @@ ul.carList li p{
   font-weight: bold;
   float: right;
 }
+/*agrego un poco de padding para dar aire al texto*/
+.texto{
+  padding: 2em;
+}
+.animated{
 
+  opacity: 0;
+}

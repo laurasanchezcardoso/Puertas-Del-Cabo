@@ -10,14 +10,6 @@ footer{
   padding-left: 2em;
   padding-right: 2em;
 }
-/*agrego un poco de padding para dar aire al texto*/
-.texto{
-  padding: 2em;
-}
-.animated{
-
-  opacity: 0;
-}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
