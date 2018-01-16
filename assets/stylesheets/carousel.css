@@ -6,10 +6,7 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
-footer{
-  padding-left: 2em;
-  padding-right: 2em;
-}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -43,7 +40,7 @@ footer{
 
 /* Carousel base class */
 .carousel {
-  height: 100vh;
+  height: 50em;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -53,7 +50,7 @@ footer{
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 100vh;
+  height: 50em;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -138,26 +135,8 @@ footer{
 }
 
 
-@media (max-width: 1024px){
-    #myCarousel{
-      width: auto;
 
-    }
-    .carousel {
-  height: 55vh;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 55vh;
-}
-    .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-}
-}
-@media(max-width: 900px){
+@media(max-width: 938px){
 .carousel {
   height: 46vh;
 }
@@ -172,7 +151,7 @@ footer{
   width: auto;
 }
 }
-@media (max-width: 720px){
+@media (max-width: 750px){
     #myCarousel{
       width: auto;
 
@@ -191,7 +170,7 @@ footer{
   width: auto;
 }
 }
-@media (max-width: 480px){
+@media (max-width: 670px){
 .carousel {
   height: 34vh;
 }
