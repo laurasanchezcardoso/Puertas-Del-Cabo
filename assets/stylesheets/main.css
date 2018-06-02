@@ -87,6 +87,13 @@ ul.carList li p{
 
   opacity: 0;
 }
+h2{
+  padding-bottom: 0.2em;
+}
+p{
+  font-size: 1em;
+  font-weight: bold;
+}
 footer{
   padding-left: 2em;
   padding-right: 2em;

@@ -38,30 +38,42 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
+/* Wrapper for the slide container and indicators*/
 .carousel {
-  height: 50em;
-  margin-bottom: 60px;
+  position: relative;
+  margin-bottom: 5em;
 }
-/* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 50em;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: auto;
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
+.item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100%;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
 
+.item.active {
+  display: block;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+display: block;
+/* height: auto; */
+max-width: 100%;
+line-height: 1;
+width: 100%;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -129,59 +141,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
+  .featurette-heading-contacto {
     margin-top: 120px;
   }
-}
-
-
-
-@media(max-width: 938px){
-.carousel {
-  height: 46vh;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 46vh;
-}
-    .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-}
-}
-@media (max-width: 750px){
-    #myCarousel{
-      width: auto;
-
-    }
-    .carousel {
-  height: 42vh;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 42vh;
-}
-    .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-}
-}
-@media (max-width: 670px){
-.carousel {
-  height: 34vh;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 34vh;
-}
-    .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-}
 }
